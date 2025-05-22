@@ -140,10 +140,10 @@ export function ResearchBlock({
                 value="report"
                 disabled={!hasReport}
               >
-                Report
+                Báo cáo
               </TabsTrigger>
               <TabsTrigger className="px-8" value="activities">
-                Activities
+                Hoạt động
               </TabsTrigger>
             </TabsList>
           </div>

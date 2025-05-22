@@ -14,23 +14,23 @@ import { CommandGroup, CommandItem, CommandSeparator } from "../../ui/command";
 const options = [
   {
     value: "improve",
-    label: "Improve writing",
+    label: "Cải thiện đoạn viết",
     icon: RefreshCcwDot,
   },
-  // TODO: add this back in
-  // {
-  //   value: "fix",
-  //   label: "Fix grammar",
-  //   icon: CheckCheck,
-  // },
+  //TODO: add this back in
+  {
+    value: "fix",
+    label: "Sửa lỗi chính tả",
+    icon: CheckCheck,
+  },
   {
     value: "shorter",
-    label: "Make shorter",
+    label: "Làm ngắn hơn",
     icon: ArrowDownWideNarrow,
   },
   {
     value: "longer",
-    label: "Make longer",
+    label: "Làm dài hơn",
     icon: WrapText,
   },
 ];
@@ -44,7 +44,7 @@ const AISelectorCommands = ({ onSelect }: AISelectorCommandsProps) => {
   if (!editor) return null;
   return (
     <>
-      <CommandGroup heading="Edit or review selection">
+      <CommandGroup heading="Chỉnh sửa hoặc xem lại">
         {options.map((option) => (
           <CommandItem
             onSelect={(value) => {
@@ -64,7 +64,7 @@ const AISelectorCommands = ({ onSelect }: AISelectorCommandsProps) => {
         ))}
       </CommandGroup>
       <CommandSeparator />
-      <CommandGroup heading="Use AI to do more">
+      <CommandGroup heading="Sử dụng AI để làm nhiều hơn">
         <CommandItem
           onSelect={() => {
             const pos = editor.state.selection.from;
@@ -75,7 +75,7 @@ const AISelectorCommands = ({ onSelect }: AISelectorCommandsProps) => {
           className="gap-2 px-4"
         >
           <StepForward className="h-4 w-4 text-purple-500" />
-          Continue writing
+          Tiếp tục viết
         </CommandItem>
       </CommandGroup>
     </>

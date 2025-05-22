@@ -36,7 +36,7 @@ const AICompletionCommands = ({
           }}
         >
           <Check className="text-muted-foreground h-4 w-4" />
-          Replace selection
+          Thay thế lựa chọn
         </CommandItem>
         <CommandItem
           className="gap-2 px-4"
@@ -51,7 +51,7 @@ const AICompletionCommands = ({
           }}
         >
           <TextQuote className="text-muted-foreground h-4 w-4" />
-          Insert below
+          Chèn bên dưới
         </CommandItem>
       </CommandGroup>
       <CommandSeparator />

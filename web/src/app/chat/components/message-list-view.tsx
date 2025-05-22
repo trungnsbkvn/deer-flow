@@ -243,9 +243,9 @@ function ResearchCard({
   const openResearchId = useStore((state) => state.openResearchId);
   const state = useMemo(() => {
     if (hasReport) {
-      return reportGenerating ? "Generating report..." : "Report generated";
+      return reportGenerating ? "Đang tạo báo cáo..." : "Đã tạo báo cáo";
     }
-    return "Researching...";
+    return "Đang nghiên cứu...";
   }, [hasReport, reportGenerating]);
   const msg = useResearchMessage(researchId);
   const title = useMemo(() => {
@@ -266,8 +266,8 @@ function ResearchCard({
     <Card className={cn("w-full", className)}>
       <CardHeader>
         <CardTitle>
-          <RainbowText animated={state !== "Report generated"}>
-            {title !== undefined && title !== "" ? title : "Deep Research"}
+          <RainbowText animated={state !== "Đã tạo báo cáo"}>
+            {title !== undefined && title !== "" ? title : "Nghiên cứu chuyên sâu"}
           </RainbowText>
         </CardTitle>
       </CardHeader>
@@ -280,7 +280,7 @@ function ResearchCard({
             variant={!openResearchId ? "default" : "outline"}
             onClick={handleOpen}
           >
-            {researchId !== openResearchId ? "Open" : "Close"}
+            {researchId !== openResearchId ? "Mở" : "Đóng"}
           </Button>
         </div>
       </CardFooter>
@@ -288,7 +288,7 @@ function ResearchCard({
   );
 }
 
-const GREETINGS = ["Cool", "Sounds great", "Looks good", "Great", "Awesome"];
+const GREETINGS = ["Ok", "Nghe tuyệt vời", "Trông rất ổn", "Tuyệt", "Tuyệt vời"];
 function PlanCard({
   className,
   message,
@@ -332,7 +332,7 @@ function PlanCard({
             {`### ${
               plan.title !== undefined && plan.title !== ""
                 ? plan.title
-                : "Nghiên cứu sâu"
+                : "Nghiên cứu chuyên sâu"
             }`}
           </Markdown>
         </CardTitle>

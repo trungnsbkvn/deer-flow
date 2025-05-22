@@ -139,7 +139,7 @@ export async function sendMessage(
       }
     }
   } catch {
-    toast("An error occurred while generating the response. Please try again.");
+    toast("Đã xảy ra lỗi khi tạo phản hồi. Vui lòng thử lại.");
     // Update message status.
     // TODO: const isAborted = (error as Error).name === "AbortError";
     if (messageId != null) {
@@ -313,7 +313,7 @@ export async function listenToPodcast(researchId: string) {
             },
           ),
         }));
-        toast("An error occurred while generating podcast. Please try again.");
+        toast("Đã xảy ra lỗi khi tạo podcast. Vui lòng thử lại.");
         return;
       }
       useStore.setState((state) => ({

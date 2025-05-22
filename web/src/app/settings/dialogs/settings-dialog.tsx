@@ -101,9 +101,9 @@ export function SettingsDialog() {
       </Tooltip>
       <DialogContent className="sm:max-w-[850px]">
         <DialogHeader>
-          <DialogTitle>DeerFlow Settings</DialogTitle>
+          <DialogTitle>Cấu hình</DialogTitle>
           <DialogDescription>
-            Manage your DeerFlow settings here.
+            Quản lý các tham số cấu hình ở đây.
           </DialogDescription>
         </DialogHeader>
         <Tabs value={activeTabId}>
@@ -157,10 +157,10 @@ export function SettingsDialog() {
         </Tabs>
         <DialogFooter>
           <Button variant="outline" onClick={() => setOpen(false)}>
-            Cancel
+            Hủy
           </Button>
           <Button className="w-24" type="submit" onClick={handleSave}>
-            Save
+            Lưu
           </Button>
         </DialogFooter>
       </DialogContent>

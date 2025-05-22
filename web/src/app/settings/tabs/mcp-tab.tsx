@@ -74,15 +74,13 @@ export const MCPTab: Tab = ({ settings, onChange }) => {
           <AddMCPServerDialog onAdd={handleAddServers} />
         </div>
         <div className="text-muted-foreground markdown text-sm">
-          The Model Context Protocol boosts DeerFlow by integrating external
-          tools for tasks like private domain searches, web browsing, food
-          ordering, and more. Click here to
+        Giao thức Ngữ cảnh Mô hình (Model Context Protocol) thúc đẩy DEER bằng cách tích hợp các công cụ bên ngoài cho các nhiệm vụ như tìm kiếm miền riêng, duyệt web, đặt món ăn, và hơn thế nữa. Nhấp vào đây để
           <a
             className="ml-1"
             target="_blank"
             href="https://modelcontextprotocol.io/"
           >
-            learn more about MCP.
+            tìm hiểu thêm về MCP.
           </a>
         </div>
       </header>
