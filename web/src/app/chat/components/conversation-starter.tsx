@@ -8,10 +8,10 @@ import { cn } from "~/lib/utils";
 import { Welcome } from "./welcome";
 
 const questions = [
-  "How many times taller is the Eiffel Tower than the tallest building in the world?",
-  "How many years does an average Tesla battery last compared to a gasoline engine?",
-  "How many liters of water are required to produce 1 kg of beef?",
-  "How many times faster is the speed of light compared to the speed of sound?",
+  "Tòa tháp Eiffel cao gấp bao nhiêu lần so với tòa nhà cao nhất thế giới?",
+  "Pin Tesla trung bình sử dụng được bao nhiêu năm so với động cơ xăng?",
+  "Cần bao nhiêu lít nước để sản xuất 1 kg thịt bò?",
+  "Tốc độ ánh sáng nhanh gấp bao nhiêu lần so với tốc độ âm thanh?",
 ];
 export function ConversationStarter({
   className,

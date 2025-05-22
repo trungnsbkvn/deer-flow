@@ -132,7 +132,7 @@ export function InputBox({
           placeholder={
             feedback
               ? `Describe how you ${feedback.option.text.toLocaleLowerCase()}?`
-              : "What can I do for you?"
+              : "Tôi có thể làm gì cho bạn?"
           }
           value={message}
           onCompositionStart={() => setImeStatus("active")}
@@ -150,12 +150,10 @@ export function InputBox({
             title={
               <div>
                 <h3 className="mb-2 font-bold">
-                  Investigation Mode: {backgroundInvestigation ? "On" : "Off"}
+                Chế độ Điều tra: {backgroundInvestigation ? "On" : "Off"}
                 </h3>
                 <p>
-                  When enabled, DeerFlow will perform a quick search before
-                  planning. This is useful for researches related to ongoing
-                  events and news.
+                Khi được kích hoạt, AI Agent sẽ thực hiện tìm kiếm nhanh trước khi lập kế hoạch. Điều này hữu ích cho các nghiên cứu liên quan đến sự kiện và tin tức đang diễn ra.
                 </p>
               </div>
             }

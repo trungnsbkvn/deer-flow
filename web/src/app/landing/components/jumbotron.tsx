@@ -1,7 +1,6 @@
 // Copyright (c) 2025 Bytedance Ltd. and/or its affiliates
 // SPDX-License-Identifier: MIT
 
-import { GithubFilled } from "@ant-design/icons";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
@@ -34,15 +33,12 @@ export function Jumbotron() {
       <div className="relative z-10 flex flex-col items-center justify-center gap-12">
         <h1 className="text-center text-4xl font-bold md:text-6xl">
           <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-            Deep Research{" "}
+          Nghiên cứu chuyên sâu {" "}
           </span>
-          <AuroraText>at Your Fingertips</AuroraText>
+          <AuroraText>trong tầm tay của bạn</AuroraText>
         </h1>
         <p className="max-w-4xl p-2 text-center text-sm opacity-85 md:text-2xl">
-          Meet DeerFlow, your personal Deep Research assistant. With powerful
-          tools like search engines, web crawlers, Python and MCP services, it
-          delivers instant insights, comprehensive reports, and even captivating
-          podcasts.
+        Gặp gỡ DEER Agent, trợ lý nghiên cứu sâu cá nhân của bạn. Với các công cụ mạnh mẽ như công cụ tìm kiếm, trình thu thập dữ liệu web, Python và dịch vụ MCP, nó cung cấp thông tin chi tiết tức thì, báo cáo toàn diện và thậm chí cả các podcast hấp dẫn.
         </p>
         <div className="flex gap-6">
           <Button className="hidden text-lg md:flex md:w-42" size="lg" asChild>
@@ -52,29 +48,13 @@ export function Jumbotron() {
               }
               href={
                 env.NEXT_PUBLIC_STATIC_WEBSITE_ONLY
-                  ? "https://github.com/bytedance/deer-flow"
+                  ? "#"
                   : "/chat"
               }
             >
-              Get Started <ChevronRight />
+              Bắt đầu <ChevronRight />
             </Link>
           </Button>
-          {!env.NEXT_PUBLIC_STATIC_WEBSITE_ONLY && (
-            <Button
-              className="w-42 text-lg"
-              size="lg"
-              variant="outline"
-              asChild
-            >
-              <Link
-                href="https://github.com/bytedance/deer-flow"
-                target="_blank"
-              >
-                <GithubFilled />
-                Learn More
-              </Link>
-            </Button>
-          )}
         </div>
       </div>
       <div className="absolute bottom-8 flex text-xs opacity-50">

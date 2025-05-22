@@ -17,10 +17,10 @@ export default function HomePage() {
       <SiteHeader />
       <main className="container flex flex-col items-center justify-center gap-56">
         <Jumbotron />
-        <CaseStudySection />
-        <MultiAgentSection />
-        <CoreFeatureSection />
-        <JoinCommunitySection />
+        {/* <CaseStudySection /> */}
+        {/* <MultiAgentSection /> */}
+        {/* <CoreFeatureSection /> */}
+        {/* <JoinCommunitySection /> */}
       </main>
       <Footer />
       <Ray />
@@ -40,7 +40,7 @@ function Footer() {
       </div>
       <div className="text-muted-foreground container mb-8 flex flex-col items-center justify-center text-xs">
         <p>Licensed under MIT License</p>
-        <p>&copy; {year} DeerFlow</p>
+        <p>&copy; {year} DEER</p>
       </div>
     </footer>
   );

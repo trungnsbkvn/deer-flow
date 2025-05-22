@@ -317,7 +317,7 @@ function PlanCard({
   const handleAccept = useCallback(async () => {
     if (onSendMessage) {
       onSendMessage(
-        `${GREETINGS[Math.floor(Math.random() * GREETINGS.length)]}! ${Math.random() > 0.5 ? "Let's get started." : "Let's start."}`,
+        `${GREETINGS[Math.floor(Math.random() * GREETINGS.length)]}! ${Math.random() > 0.5 ? "Hãy bắt đầu" : "Hãy bắt đầu nhé."}`,
         {
           interruptFeedback: "accepted",
         },
@@ -332,7 +332,7 @@ function PlanCard({
             {`### ${
               plan.title !== undefined && plan.title !== ""
                 ? plan.title
-                : "Deep Research"
+                : "Nghiên cứu sâu"
             }`}
           </Markdown>
         </CardTitle>

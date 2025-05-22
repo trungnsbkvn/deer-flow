@@ -43,7 +43,7 @@ export const Link = ({
       </a>
       {!isCredible && (
         <Tooltip
-          title="This link might be a hallucination from AI model and may not be reliable."
+          title="Liên kết này có thể là sản phẩm tưởng tượng từ mô hình AI và có thể không đáng tin cậy."
           delayDuration={300}
         >
           <WarningFilled className="text-sx transition-colors hover:!text-yellow-500" />

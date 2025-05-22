@@ -14,20 +14,20 @@ export function Welcome({ className }: { className?: string }) {
       animate={{ opacity: 1, scale: 1 }}
     >
       <h3 className="mb-2 text-center text-3xl font-medium">
-        👋 Hello, there!
+        👋 Xin chào,
       </h3>
       <div className="text-muted-foreground px-4 text-center text-lg">
-        Welcome to{" "}
+        {" "}
         <a
-          href="https://github.com/bytedance/deer-flow"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
         >
-          🦌 DeerFlow
+        DEER Agent 
         </a>
-        , a deep research assistant built on cutting-edge language models, helps
-        you search on web, browse information, and handle complex tasks.
+        {" "}
+         là một trợ lý nghiên cứu chuyên sâu được xây dựng dựa trên các mô hình ngôn ngữ tiên tiến, giúp bạn tìm kiếm trên web, duyệt thông tin và xử lý các nhiệm vụ phức tạp.
       </div>
     </motion.div>
   );

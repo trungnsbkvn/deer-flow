@@ -156,7 +156,7 @@ function WebSearchToolCall({ toolCall }: { toolCall: ToolCallRuntime }) {
           animated={searchResults === undefined}
         >
           <Search size={16} className={"mr-2"} />
-          <span>Searching for&nbsp;</span>
+          <span>Đang tìm kiếm&nbsp;</span>
           <span className="max-w-[500px] overflow-hidden text-ellipsis whitespace-nowrap">
             {(toolCall.args as { query: string }).query}
           </span>
