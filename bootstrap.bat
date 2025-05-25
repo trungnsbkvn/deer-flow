@@ -12,7 +12,7 @@ IF "%MODE%"=="development" GOTO DEV
 echo Starting DeerFlow in [PRODUCTION] mode...
 start uv run server.py
 cd web
-start pnpm exec node .next/standalone/server.js
+start pnpm run start
 REM Wait for user to close
 GOTO END
 
